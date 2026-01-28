@@ -1,0 +1,37 @@
+/* สีพื้นหลังหลัก Dark Theme */
+body {
+  background-color: #0f172a; /* สีกรมท่าเข้มๆ เหมือนในรูป */
+  color: #ffffff;
+}
+
+/* Custom Class สำหรับ Sidebar */
+.bg-dark-theme {
+  background-color: #1e293b; /* สี Sidebar ตัดกับพื้นหลัง */
+}
+
+/* Sidebar Fix ขนาดสำหรับ Desktop */
+.sidebar-fixed {
+  width: 280px;
+  height: 100vh; /* สูงเต็มจอ */
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* เว้นที่ว่างด้านซ้ายสำหรับ Content เวลาจอใหญ่ */
+@media (min-width: 992px) {
+  .main-content {
+    margin-left: 280px; /* ดันเนื้อหาหนี Sidebar */
+  }
+}
+
+/* ปรับแต่งปุ่ม Hamburger */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
