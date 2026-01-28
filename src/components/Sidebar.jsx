@@ -2,6 +2,7 @@ import React from 'react';
 import { Nav, Offcanvas, Image } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { FaHome, FaBriefcase, FaEnvelope, FaUserCircle } from 'react-icons/fa'; // อย่าลืมลง react-icons นะครับ
+import { FaFileDownload } from 'react-icons/fa';
 
 function Sidebar({ show, handleClose }) {
   // สร้างฟังก์ชัน Content เพื่อใช้ซ้ำทั้งใน Mobile (Drawer) และ Desktop (Sidebar)
@@ -18,20 +19,29 @@ function Sidebar({ show, handleClose }) {
         <Nav.Item>
           {/* ใช้ NavLink เพื่อให้มี Active State อัตโนมัติ */}
           <Nav.Link as={NavLink} to="/" className="text-white mb-2" onClick={handleClose}>
-            <FaHome className="me-2" /> หน้าแรก
+            <FaHome className="me-2" /> Home
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={NavLink} to="/portfolio" className="text-white mb-2" onClick={handleClose}>
-            <FaBriefcase className="me-2" /> ผลงาน
+            <FaBriefcase className="me-2" /> Achievements
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={NavLink} to="/contact" className="text-white mb-2" onClick={handleClose}>
-            <FaEnvelope className="me-2" /> ติดต่อเรา
+            <FaEnvelope className="me-2" /> Contacts
           </Nav.Link>
         </Nav.Item>
       </Nav>
+      <Nav.Item>
+        <Nav.Link 
+          href="/resume.pdf" 
+          target="_blank" 
+          className="text-white mb-2"
+        >
+          <FaFileDownload className="me-2" /> Resume
+        </Nav.Link>
+      </Nav.Item>
       
       <hr />
       {/* ส่วน User ด้านล่าง */}

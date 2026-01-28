@@ -6,7 +6,7 @@ import ProjectCard from '../components/ProjectCard';
 
 // --- 1. นำเข้ารูปภาพจาก folder assets ---
 // ตั้งชื่อตัวแปรให้สื่อความหมาย (เช่น project1Img)
-import project1Img from "../assets/Weather.png"; // เปลี่ยนชื่อไฟล์ตามจริง
+import project1Img from "../assets/calculate.png"; // เปลี่ยนชื่อไฟล์ตามจริง
 import project2Img from "../assets/Weather.png"; // เปลี่ยนชื่อไฟล์ตามจริง
 // import project3Img from '../assets/todo-list.jpg';
 
@@ -15,9 +15,9 @@ function Portfolio() {
   const myProjects = [
     { 
       id: 1, 
-      title: "E-Commerce App", 
-      desc: "แอปซื้อขายของออนไลน์ด้วย React", 
-      link: "#",
+      title: "Calculator App", 
+      desc: "เครื่องคิดเลขออนไลน์ด้วย React", 
+      link: "https://calculator-react-bdxv.vercel.app/",
       // --- 2. ใช้ตัวแปรรูปภาพที่นำเข้ามา ---
       imgSrc: project1Img 
     },
@@ -34,7 +34,7 @@ function Portfolio() {
 
   return (
     <Container className="mt-5">
-      <h2 className="mb-4 text-center text-white">ผลงานของผม</h2>
+      <h2 className="mb-4 text-center text-white">My Projects</h2>
       <Row>
         {myProjects.map((project) => (
           <Col key={project.id} md={4} className="mb-4">

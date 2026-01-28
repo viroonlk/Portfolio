@@ -35,3 +35,48 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
 }
+/* App.css */
+.skill-card {
+  transition: transform 0.3s ease; /* ทำให้ขยับนุ่มนวล */
+}
+
+.skill-card:hover {
+  transform: translateY(-10px); /* ลอยขึ้น 10px */
+  background-color: #2d3748 !important; /* เปลี่ยนสีพื้นหลังให้อ่อนลงนิดนึง */
+  border-color: #61DAFB !important; /* เปลี่ยนขอบเป็นสีฟ้า React */
+}
+/* App.css เพิ่มเติม */
+
+/* ระยะห่างตัวอักษรสำหรับหัวข้อเล็ก */
+.spacing-2 {
+  letter-spacing: 2px;
+}
+
+/* ปรับแต่งปุ่มให้ดูโค้งมนทันสมัย */
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+/* Effect พื้นหลังหลังรูปภาพ (วงกลมเรืองแสงจางๆ) */
+.blob-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(97, 218, 251, 0.2) 0%, rgba(30, 41, 59, 0) 70%);
+  z-index: 0;
+  border-radius: 50%;
+}
+/* src/App.css */
+
+.hover-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px); /* ลอยขึ้น */
+  border-color: #61DAFB !important; /* เปลี่ยนสีขอบเป็นสีฟ้า */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5) !important; /* เพิ่มเงา */
+}
