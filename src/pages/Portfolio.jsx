@@ -8,6 +8,7 @@ import ProjectCard from '../components/ProjectCard';
 // ตั้งชื่อตัวแปรให้สื่อความหมาย (เช่น project1Img)
 import project1Img from "../assets/calculate.png"; // เปลี่ยนชื่อไฟล์ตามจริง
 import project2Img from "../assets/Weather.png"; // เปลี่ยนชื่อไฟล์ตามจริง
+import project3Img from "../assets/Ecommerce.png"; // เปลี่ยนชื่อไฟล์ตามจริง
 // import project3Img from '../assets/todo-list.jpg';
 
 function Portfolio() {
@@ -28,6 +29,14 @@ function Portfolio() {
       link: "https://weather-react-murex.vercel.app/",
       // --- 2. ใช้ตัวแปรรูปภาพที่นำเข้ามา ---
       imgSrc: project2Img
+    },
+    { 
+      id: 3, 
+      title: "Online Clothing E-Commerce Platform", 
+      desc: "เว็บซื้อขายเสื้อผ้าออนไลน์", 
+      link: "https://online-clothing-eta.vercel.app/",
+      // --- 2. ใช้ตัวแปรรูปภาพที่นำเข้ามา ---
+      imgSrc: project3Img
     },
     // { id: 3, title: "To-Do List", desc: "...", link: "#", imgSrc: project3Img }
   ];
