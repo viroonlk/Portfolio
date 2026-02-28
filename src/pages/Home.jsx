@@ -6,7 +6,7 @@ import { FaFileDownload, FaArrowRight } from 'react-icons/fa';
 import Skills from '../components/Skills';
 
 // Import Resume
-import myResume from '../assets/Resume.pdf'; 
+import myResume from '../assets/Resume_Viroon Langkaew.pdf'; 
 
 function Home() {
   return (
