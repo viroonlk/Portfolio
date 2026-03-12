@@ -9,6 +9,7 @@ import ProjectCard from '../components/ProjectCard';
 import project1Img from "../assets/calculate.png"; // เปลี่ยนชื่อไฟล์ตามจริง
 import project2Img from "../assets/Weather.png"; // เปลี่ยนชื่อไฟล์ตามจริง
 import project3Img from "../assets/Ecommerce.png"; // เปลี่ยนชื่อไฟล์ตามจริง
+import project4Img from "../assets/todolist.png"; // เปลี่ยนชื่อไฟล์ตามจริง
 // import project3Img from '../assets/todo-list.jpg';
 
 function Portfolio() {
@@ -37,6 +38,14 @@ function Portfolio() {
       link: "https://online-clothing-eta.vercel.app/",
       // --- 2. ใช้ตัวแปรรูปภาพที่นำเข้ามา ---
       imgSrc: project3Img
+    },
+    { 
+      id: 4, 
+      title: "To-Do-List", 
+      desc: "เว็บบริหารจัดการงาน", 
+      link: "https://to-do-list-pi-pearl-97.vercel.app/",
+      // --- 2. ใช้ตัวแปรรูปภาพที่นำเข้ามา ---
+      imgSrc: project4Img
     },
     // { id: 3, title: "To-Do List", desc: "...", link: "#", imgSrc: project3Img }
   ];
