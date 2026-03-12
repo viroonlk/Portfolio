@@ -3,6 +3,7 @@ import { Nav, Offcanvas, Image } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { FaHome, FaBriefcase, FaEnvelope, FaUserCircle } from 'react-icons/fa'; // อย่าลืมลง react-icons นะครับ
 import { FaFileDownload } from 'react-icons/fa';
+import myResume from '../assets/Resume_Viroon Langkaew.pdf'; 
 
 function Sidebar({ show, handleClose }) {
   // สร้างฟังก์ชัน Content เพื่อใช้ซ้ำทั้งใน Mobile (Drawer) และ Desktop (Sidebar)
