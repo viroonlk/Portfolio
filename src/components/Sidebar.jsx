@@ -36,8 +36,9 @@ function Sidebar({ show, handleClose }) {
       </Nav>
       <Nav.Item>
         <Nav.Link 
-          href="../assets/Resume_Viroon Langkaew.pdf" 
+          href="{myResume}" 
           target="_blank" 
+          rel="noopener noreferrer"
           className="text-white mb-2"
         >
           <FaFileDownload className="me-2" /> Resume
