@@ -36,7 +36,7 @@ function Sidebar({ show, handleClose }) {
       </Nav>
       <Nav.Item>
         <Nav.Link 
-          href="{myResume}" 
+          href={myResume}
           target="_blank" 
           rel="noopener noreferrer"
           className="text-white mb-2"
