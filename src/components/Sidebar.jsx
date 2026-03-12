@@ -35,7 +35,7 @@ function Sidebar({ show, handleClose }) {
       </Nav>
       <Nav.Item>
         <Nav.Link 
-          href="/assets/Resume_Viroon Langkaew.pdf" 
+          href="../assets/Resume_Viroon Langkaew.pdf" 
           target="_blank" 
           className="text-white mb-2"
         >
