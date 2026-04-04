@@ -1,0 +1,17 @@
+
+
+services:
+  portfolio-web:
+    container_name: viroon_portfolio
+    build: .
+    ports:
+      # แมปพอร์ต เครื่องเรา:เครื่องDocker
+      - "5173:5173"
+    volumes:
+      # ซิงค์ไฟล์ในเครื่องเรา กับใน Docker (เวลาแก้โค้ดจะได้อัปเดตทันที)
+      - .:/app
+      # ละเว้นโฟลเดอร์ node_modules ในเครื่อง ไม่ให้ไปทับใน Docker
+      - /app/node_modules
+    environment:
+      # บังคับให้ Vite รีเฟรชหน้าเว็บเวลามีการแก้โค้ดในระบบ Docker
+      - CHOKIDAR_USEPOLLING=true
